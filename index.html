@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Menu Simple con HTML Y CSS</title>
+	<link rel="stylesheet" href="estilos.css">
+    	<style>
+		body {margin-left: 100px; margin-right: 100px; text-align:justify;}
+        
+		div.otro {
+		background-color: cadetblue;
+		color: white;
+            margin: 30px 0 20px 0;
+		padding: 20px;
+		} 
+        
+	
+        
+        .otro 3 {
+        background-color: white;
+        color: cadetblue;
+        }
+	</style>
+	
+</head>
+<body>
+	
+
+
+	<div class="otro">
+	<h1>Proyecto Final</h1>	
+    </div><br/><br/>
+    
+    <a>Martin Miguel Sandoval Bojorquez</a><br/>
+    <a>5AV-PR</a>
+    
+    
+	<div class="otro">
+	<h2>Descargas</h2>
+	<p></p></div><br/>
+    
+       
+    <h4><a style="color:cadetblue;">Actualizar paquetes</a></h4><br/>
+    1. La siguiente instruccion <a style="color:red;">( sudo update )</a> sirve para identificar lo que ya estan instalados y lo que se debe actualizar en el ubuntu.<br/><br/>
+    2. La siguiente instruccion <a style="color:red;">( sudo upgrate )</a> como lo dice el codigo sirve para actualizar cualquier paquete. Te pedira oprima la tecla <a style="color:red;">( s )</a> para confirmar la actualización.<br/><br/><br/>
+    
+    
+    <h4><a style="color:cadetblue;">MYSQL</a></h4><br/>
+    1. Obligatoriamente tiene que estar conectado el dispositivo a internet. <a style="color:red;">( apt search mysql )</a> aparecera un listado de todas las apliacaciones que tiene instaladas.<br/><br/>
+    2. Segundo paso <a style="color:red;">(sudo apt install mysql-server )</a> y oprime la tecla enter para que comieze la descarga.<br/><br/>
+    3. De la instruccion <a style="color:red;">( s )</a> para afirmar la descarga.<br/><br/><br/>
+    
+
+    <h4><a style="color:cadetblue;">Apache</a></h4><br/>
+    1. Tecleara el siguiente codigo <a style="color:red;">( apt search apache )</a> aparecera un listado de todas las apliacaciones que tiene instaladas.<br/><br/>
+    2. Ya terminado el primer paso dara la instruccion <a style="color:red;">(sudo apt install apache2)</a> para que comieze la descarga.<br/><br/>
+    3. Dara la instruccion <a style="color:red;">( s )</a> para afirmar la descarga.<br/><br/>
+    4. En este paso aprendera a identificar si esta funcionando apache <a style="color:red;">( service --status-all | grep apache2 )</a> si aparece un <a style="color:red;">[+]</a>es que esta corriendo apache y si aparece <a style="color:red;">[-]</a>es que no esta corriendo.<br/><br/><br/>
+
+    <h4><a style="color:cadetblue;">PHP</a></h4><br/>
+        1. Repetira el mismo procedimiento <a style="color:red;">( apt search php )</a> aparecera un listado de todas las apliacaciones que tiene instaladas.<br/><br/>
+        2. Ya terminado el primer paso dara la instruccion <a style="color:red;">(sudo apt install php)</a> para que comieze la descarga.<br/><br/>
+        3. Dara la instruccion <a style="color:red;">( s )</a> para afirmar la peticion y comieze la descarga.</p><br/><br/><br/>
+    
+    
+    <div class="otro"><h2>Clonacción del repocitorio.</h2></div><br/>
+    1. Este sera el lugar donde tiene que quedar guardado el codigo <a style="color:red;">( cd/var/www/html )</a> y de enter para ejecutar cualquier instrucción.<br/><br/>
+    2. Tecleara el siguiente codigo y la URL que aparece acontinuacion <a style="color:red;">(sudo git clone https://github.com/dgeti-cetis108/programacion-M4s2-2018.git)</a> esto sirve para clonar el repositorio y obligatoriamente tiene que estar conectado a internet.<br/><br/>
+    3. Despues la instrucion <a style="color:red;">( ls )</a>, esto sirve para todo el listado de archivos.<br/><br/>
+    4. Cambiara el nombre del archivo que descargo de la URL, tecleando el siguiente codigo <a style="color:red;">( sudo mv Programacion-M4s2-2018/ library.com )</a>.<br/><br/>
+    5. Despues la instrucion <a style="color:red;">( ls )</a>.<br/>
+    
+    <main  class="main">
+	<div class="otro">
+	<h2>Conectar la base de datos y ejecutar el codigo.</h2>
+	<p></p></div>
+    </main><br/>
+    
+    1. Tecle el comando <a style="color:red;">( cd library.com/db )</a>y dar enter para cambiar de carpeta.<br/><br/>
+
+    2. Escriba el comando <a style="color:red;">( ls )</a> y dar enter. Deber aparecer un archivo (sql).<br/><br/>
+
+    3. Escriba el comando <a style="color:red;">( sudo nano library.sql ) </a>y dar enter para editar el archivo.<br/><br/>
+
+    4.  Agrege el siguiente codigo <a style="color:red;">( USE `library` )</a><br/><br/>
+
+    5. Presionar las teclas <a style="color:red;">( ctrl+o ) </a>y dar enter para guardar los cambios realizados.<br/><br/>
+
+    6. Presionar las teclas <a style="color:red;">( ctrl+x )</a> para salir.<br/><br/>
+
+    7. tecle el comando <a style="color:red;">( cat library.sql ) </a>y dar enter para confirmar la salida del editor nano.<br/><br/>
+
+    8. Escribir el comando <a style="color:red;">( sudo -i )</a> y dar enter para cambiar al usuario root.<br/><br/>
+
+    9. Escribir <a style="color:red;">( mysql )</a> y dar enter para entrar a mysql.<br/><br/>
+
+    10. Escribir el comando <a style="color:red;">( source /var/www/html/library.com/db/library.sql)</a> y dar enter para crear la base de datos.<br/><br/>
+
+    11. Escribir el comando <a style="color:red;">( show databases )</a> y dar enter para ver las base de datos creada.<br/><br/>
+
+    12. Escribir el comando <a style="color:red;">( select user host from mysql.user )</a> y dar enter para ver los usuarios.<br/><br/>
+    
+   
+    
+    
+    
+	<div class="otro">
+	<h2>Modificar usuario y contraseña</h2>
+	<p></p></div><br/>
+    1. Tecle la siguiente comando <a style="color:red;">(create user 'martin'@'localhost' identified by '123' )</a> eso depende si quiere editar la contraseña y de entre.<br/><br/>
+    2. Escribe el comando <a style="color:red;">( grant all on library to 'martin'@'localhost' )</a> esto sirve para otorgar permisos.<br/><br/>
+    3. Escribe <a style="color:red;">( exit )</a> y dar enter para salir de mysql y de nuevo escribir <a style="color:red;">( exit )</a> y dar enter para salir de root.<br/><br/>
+    5. Escribe el comando <a style="color:red;">( mysql -u martin -p )</a>. pedira la contraseña y dar enter para comprobar la conexion y de nuevo <a style="color:red;">( exit )</a> y de enter para salir de mysql.<br/><br/>
+    7. Tecle el comando <a style="color:red;">( sudo nano /var/www/html/library.com/classes/conexion.php )</a> y de enter para dar permiso a la instruccion. <br/><br/>
+    8. Aparecera la siguiente intruccion <a style="color:red;">( username )</a> y escriba el nombre del usuario que se creo anterior con su contraseña.<br/><br/>
+    9. Oprima las teclas <a style="color:red;">( ctrl+o )</a> para guardar cambios.<br/><br/> 
+    10. Oprima las teclas <a style="color:red;">( ctrl+x )</a>para salir del editor. <br/><br/>
+    11. Tecle las el siguiente codigo <a style="color:red;">( sudo apt install php-mysql )</a> esto sirve para instalar el paquete.<br/><br/>
+    12. Oprima la teclas <a style="color:red;">( s )</a> precione enter para aceptar la instalacion.<br/><br/>
+    13. Tecle las el siguiente codigo <a style="color:red;">( sudo  service apache2 resart )</a> y da enter para reiniciar el servidor.<br/><br/>
+    
+    <div class="otro">
+	<h2>Configuracion de Virtual Host</h2>
+	</div><br/>
+1.Entre a la carpeta <a style="color:red;">( /etc/apache2/sites-available )</a> una vez en la carpeta escribe <a style="color:red;">( sudo nano library.com.conf )</a>.<br/><br/>
+
+    2.Escribe en archivo el siguiente codigo <br/><br/>
+    
+    <a style="color:red;">( VirtualHost*:80><br/>
+    Server Name library.com<br/>
+    Server Alias www.library.com<br/>
+    Server Admin bryangfloresr2@gmail.com <br/>
+    DocumentRoot /var/log/library.com-error.log<br/>
+    CustomLog /var/log/library.com-acces.log. common<br/>
+    ServerName<br/>
+        /VirtualHost )</a><br/><br/>
+    
+3.Ya terminado el paso anterior tecle el comando <a style="color:red;">( ls )</a> .<br/><br/>
+
+4.En la carpeta <a style="color:red;">( sites-available )</a> y escribe <a style="color:red;">( sudo a2ensite library.com )</a> esto sirve para habilitar el dominio. Y reinicia el apache <a style="color:red;">( sudo service apache2 restart )</a>.<br/><br/>
+
+5.Entra a la carpeta <a style="color:red;">( /etc/hosts/ )</a> y agrege el siguiente codigo<br/><br/>
+
+    <a style="color:red;">127.0.0.1 library.com<br/>
+        127.0.0.1 www.library.com</a><br/><br/>
+    
+6. Guarda los cambios con el comando <a style="color:red;">( ctrl+o )</a>.<br/><br/>
+
+7.Ya fuera del ubuntu entrara en la carpeta <a style="color:red;">( /etc/hosts )</a> y agrege lo siguiente.<br/><br/>
+
+   <a style="color:red;">192.168.56.101 library.com<br/>
+       192.168.56.101 www.library.com</a><br/><br/>
+
+
+</body>
+</html>
